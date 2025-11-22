@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Load cart items from localStorage or session
     function loadCartItems() {
-        // In a real application, you would load from your cart system
-        // This is a placeholder implementation
         const cartItems = [
             {
                 id: 1,
@@ -17,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const cartTable = document.getElementById('cart-table');
         const emptyCart = document.getElementById('empty-cart');
         const tbody = cartTable.querySelector('tbody');
-        
         // Clear existing items
         tbody.innerHTML = '';
         
@@ -56,8 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
             tbody.appendChild(row);
         });
-        
-        // Update cart totals
         updateCartTotals();
     }
 
@@ -111,8 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             updateCartTotals();
-            
-            // In a real app, you would update the cart in your backend here
         }
         
         // Remove item handler
@@ -127,8 +119,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             updateCartTotals();
-            
-            // In a real app, you would update the cart in your backend here
         }
     });
 
@@ -142,9 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
             promoMessage.className = 'promo-message error';
             return;
         }
-        
-        // In a real application, you would validate the promo code with your backend
-        // This is just a demo
+        // demo
         if (promoCode.toUpperCase() === 'SAVORY10') {
             const totalElement = document.getElementById('total');
             const total = parseFloat(totalElement.textContent.replace('$', ''));
@@ -173,17 +161,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Add recommended items to cart
+    // recommended items
     document.querySelectorAll('.btn-add').forEach(btn => {
         btn.addEventListener('click', function() {
             const itemCard = this.closest('.recommendation-item');
             const itemName = itemCard.querySelector('h4').textContent;
             const itemPrice = parseFloat(itemCard.querySelector('.price').textContent.replace('$', ''));
-            
-            // In a real app, you would add this to your cart system
             alert(`${itemName} added to cart!`);
-            
-            // For demo purposes, we'll just reload the cart
+
             loadCartItems();
         });
     });

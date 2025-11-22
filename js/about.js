@@ -62,10 +62,6 @@ document.addEventListener('DOMContentLoaded', function() {
             item.style.transform = 'translateX(50px)';
         }
     });
-    
-    // Check on load
     checkTimelineAnimation();
-    
-    // Check on scroll
     window.addEventListener('scroll', checkTimelineAnimation);
 });

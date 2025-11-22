@@ -121,8 +121,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
     e.preventDefault();
     const email = this.querySelector('input').value;
-    
-    // In a real app, you would send this to your server
     console.log('Subscribed email:', email);
     
     // Show success message

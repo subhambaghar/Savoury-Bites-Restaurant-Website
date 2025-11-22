@@ -1,20 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Set minimum datetime for scheduled delivery
     const now = new Date();
     const minDatetime = new Date(now.getTime() + 30 * 60000); // 30 minutes from now
     const datetimeInput = document.getElementById('delivery-datetime');
     
-    // Format to YYYY-MM-DDTHH:MM
     const minDatetimeString = minDatetime.toISOString().slice(0, 16);
     datetimeInput.min = minDatetimeString;
     
-    // Set default value to the minimum allowed
     datetimeInput.value = minDatetimeString;
     
-    // Load cart items from localStorage or session
     function loadCartItems() {
-        // In a real application, you would load from your cart system
-        // This is just a placeholder implementation
         const cartItems = [
             { name: 'Margherita Pizza', price: 12.99, quantity: 1 },
             { name: 'Garlic Bread', price: 4.99, quantity: 2 }
@@ -23,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
         const orderItemsContainer = document.querySelector('.order-items');
         let subtotal = 0;
         
-        // Clear existing items
         orderItemsContainer.innerHTML = '';
         
         // Add items to the order summary
@@ -54,8 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelector('.total-row:nth-child(3) span:last-child').textContent = `$${tax.toFixed(2)}`;
         document.querySelector('.grand-total span:last-child').textContent = `$${total.toFixed(2)}`;
     }
-    
-    // Load cart items when page loads
     loadCartItems();
     
     // Apply promo code
@@ -67,8 +58,6 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Please enter a promo code');
             return;
         }
-        
-        // In a real application, you would validate the promo code with your backend
         // This is just a demo
         if (promoCode.toUpperCase() === 'SAVORY10') {
             // Apply 10% discount
@@ -114,9 +103,6 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Please fill in all required fields');
             return;
         }
-        
-        // In a real application, you would process the payment here
-        // For this demo, we'll just redirect to a confirmation page
         window.location.href = 'payment.html';
     });
     
