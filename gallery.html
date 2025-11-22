@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | SAVORY BITES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <a href="indexz.html" class="logo">SAVORY<span>BITES</span></a>
+        
+        <nav class="navbar">
+            <a href="indexz.html">Home</a>
+            <a href="aboutx.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a href="reservation.html" class="fas fa-calendar-check"></a>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        </div>
+        
+        <div class="shopping-cart">
+            <!-- Shopping cart content same as index.html -->
+        </div>
+    </header>
+
+    <!-- Gallery Page Content -->
+    <section class="gallery-page">
+        <div class="container">
+            <h2 class="section-title">Our Gallery</h2>
+            <p class="section-subtitle">A visual journey through our restaurant experience</p>
+            
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+                <button class="filter-btn" data-filter="interior">Interior</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="team">Team</button>
+            </div>
+            
+            <div class="gallery-container">
+                <!-- Food Gallery Items -->
+                <div class="gallery-item food">
+                    <a href="images/gallery/food-1.jpg" data-lightbox="gallery" data-title="Signature Dish">
+                        <img src="images/gallery/food-1-thumb.jpg" alt="Signature Dish">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h3>Signature Dish</h3>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item food">
+                    <a href="images/gallery/food-2.jpg" data-lightbox="gallery" data-title="Dessert Selection">
+                        <img src="images/gallery/food-2-thumb.jpg" alt="Dessert Selection">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h3>Dessert Selection</h3>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Interior Gallery Items -->
+                <div class="gallery-item interior">
+                    <a href="images/gallery/interior-1.jpg" data-lightbox="gallery" data-title="Main Dining Area">
+                        <img src="images/gallery/interior-1-thumb.jpg" alt="Main Dining Area">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h3>Main Dining Area</h3>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item interior">
+                    <a href="images/gallery/interior-2.jpg" data-lightbox="gallery" data-title="Bar Lounge">
+                        <img src="images/gallery/interior-2-thumb.jpg" alt="Bar Lounge">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h3>Bar Lounge</h3>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Events Gallery Items -->
+                <div class="gallery-item events">
+                    <a href="images/gallery/event-1.jpg" data-lightbox="gallery" data-title="Wine Tasting Night">
+                        <img src="images/gallery/event-1-thumb.jpg" alt="Wine Tasting Night">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h3>Wine Tasting Night</h3>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item events">
+                    <a href="images/gallery/event-2.jpg" data-lightbox="gallery" data-title="Live Music Evening">
+                        <img src="images/gallery/event-2-thumb.jpg" alt="Live Music Evening">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h3>Live Music Evening</h3>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Team Gallery Items -->
+                <div class="gallery-item team">
+                    <a href="images/gallery/team-1.jpg" data-lightbox="gallery" data-title="Our Chef in Action">
+                        <img src="images/gallery/team-1-thumb.jpg" alt="Our Chef in Action">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h3>Our Chef in Action</h3>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="gallery-item team">
+                    <a href="images/gallery/team-2.jpg" data-lightbox="gallery" data-title="Bartender Preparing Cocktails">
+                        <img src="images/gallery/team-2-thumb.jpg" alt="Bartender Preparing Cocktails">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-search-plus"></i>
+                            <h3>Bartender Preparing Cocktails</h3>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Additional items would follow the same pattern -->
+            </div>
+            
+            <div class="gallery-cta">
+                <h3>See Our Gallery in Person</h3>
+                <p>Book a table and experience our restaurant firsthand</p>
+                <a href="reservation.html" class="btn">Make a Reservation</a>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Savory Bites</h4>
+                <p>Fine dining experience with locally sourced ingredients and global flavors.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="indexz.html">Home</a></li>
+                    <li><a href="aboutx.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Culinary Street, Foodville</li>
+                    <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                    <li><i class="fas fa-envelope"></i> info@savorybites.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <ul>
+                    <li>Monday - Friday: 11am - 10pm</li>
+                    <li>Saturday: 10am - 11pm</li>
+                    <li>Sunday: 10am - 9pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 SAVORY BITES. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/gallery-filter.js"></script>
+</body>
+</html>

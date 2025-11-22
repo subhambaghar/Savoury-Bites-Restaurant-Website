@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | SAVORY BITES</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <a href="indexz.html" class="logo">SAVORY<span>BITES</span></a>
+        
+        <nav class="navbar">
+            <a href="indexz.html">Home</a>
+            <a href="aboutx.html">About</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a href="reservation.html" class="fas fa-calendar-check"></a>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        </div>
+        
+        <div class="shopping-cart">
+            <div class="cart-items">
+                <!-- Cart items will be added dynamically -->
+            </div>
+            <div class="total">Total: $0.00</div>
+            <a href="checkout.html" class="btn">Checkout</a>
+        </div>
+    </header>
+
+    <!-- Menu Page Content -->
+    <section class="menu-page">
+        <div class="container">
+            <div class="menu-header">
+                <h2 class="section-title">Our Menu</h2>
+                <div class="menu-search">
+                    <input type="text" id="menu-search" placeholder="Search menu items...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All Items</button>
+                <button class="category-btn" data-category="starters">Starters</button>
+                <button class="category-btn" data-category="mains">Main Courses</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+                <button class="category-btn" data-category="specials">Today's Specials</button>
+            </div>
+            
+            <div class="menu-sections">
+                <!-- Starters Section -->
+                <section class="menu-section" id="starters">
+                    <h3 class="section-subtitle"><i class="fas fa-utensils"></i> Starters & Appetizers</h3>
+                    <div class="menu-items">
+                        <!-- Item 1 -->
+                        <div class="menu-item" data-category="starters">
+                            <div class="item-image">
+                                <img src="images/menu/bruschetta.jpg" alt="Classic Bruschetta">
+                                <span class="veg-icon"><i class="fas fa-leaf"></i></span>
+                            </div>
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <h4>Classic Bruschetta</h4>
+                                    <span class="price">$8.99</span>
+                                </div>
+                                <p class="item-description">Toasted bread topped with tomatoes, garlic, fresh basil, and extra virgin olive oil.</p>
+                                <div class="item-footer">
+                                    <div class="item-tags">
+                                        <span class="tag vegetarian">Vegetarian</span>
+                                        <span class="tag gluten-free">Gluten-Free Option</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 2 -->
+                        <div class="menu-item" data-category="starters">
+                            <div class="item-image">
+                                <img src="images/menu/chicken.jpg" alt="Crispy Calamari">
+                            </div>
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <h4>Butter Chicken</h4>
+                                    <span class="price">$12.99</span>
+                                </div>
+                                <p class="item-description">Creamy Tomato-Based Curry With Tender Chicken Pieces.</p>
+                                <div class="item-footer">
+                                    <div class="item-tags">
+                                        <span class="tag spicy">Spicy</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- More starter items would follow the same pattern -->
+                    </div>
+                </section>
+                
+                <!-- Main Courses Section -->
+                <section class="menu-section" id="mains">
+                    <h3 class="section-subtitle"><i class="fas fa-drumstick-bite"></i> Main Courses</h3>
+                    <div class="menu-items">
+                        <!-- Item 1 -->
+                        <div class="menu-item" data-category="mains" data-special="true">
+                            <div class="item-image">
+                                <img src="images/menu/biryani.jpg" alt="Chicken Biryani">
+                                <span class="special-badge">Chef's Special</span>
+                            </div>
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <h4>Chicken Biryani</h4>
+                                    <div class="price-container">
+                                        <span class="original-price">$36.99</span>
+                                        <span class="price">$32.99</span>
+                                    </div>
+                                </div>
+                                <p class="item-description">Tender Chicken Cooked With Aromatic Spices, Basmati Rice, And Herbs, Served With Raita.</p>
+                                <div class="item-footer">
+                                    <div class="item-tags">
+                                        <span class="tag gluten-free">Gluten-Free</span>
+                                    </div>
+                                    <div class="item-actions">
+                                        <div class="quantity-selector">
+                                            <button class="quantity-btn minus">-</button>
+                                            <span class="quantity">1</span>
+                                            <button class="quantity-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Item 2 -->
+                        <div class="menu-item" data-category="mains">
+                            <div class="item-image">
+                                <img src="images/menu/salmon.jpg" alt="Grilled Salmon">
+                                <span class="veg-icon"><i class="fas fa-leaf"></i></span>
+                            </div>
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <h4>Grilled Salmon</h4>
+                                    <span class="price">$24.99</span>
+                                </div>
+                                <p class="item-description">Wild-caught salmon with lemon butter sauce, seasonal vegetables, and quinoa pilaf.</p>
+                                <div class="item-footer">
+                                    <div class="item-tags">
+                                        <span class="tag healthy">Healthy Choice</span>
+                                        <span class="tag gluten-free">Gluten-Free</span>
+                                    </div>
+                                    <div class="item-actions">
+                                        <div class="quantity-selector">
+                                            <button class="quantity-btn minus">-</button>
+                                            <span class="quantity">1</span>
+                                            <button class="quantity-btn plus">+</button>
+                                        </div>
+                                        <button class="add-to-cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- More main course items would follow the same pattern -->
+                    </div>
+                </section>
+                
+                <!-- Desserts Section -->
+                <section class="menu-section" id="desserts">
+                    <h3 class="section-subtitle"><i class="fas fa-ice-cream"></i> Desserts</h3>
+                    <div class="menu-items">
+                        <!-- Item 1 -->
+                        <div class="menu-item" data-category="desserts">
+                            <div class="item-image">
+                                <img src="images/menu/tiramisu.jpg" alt="Classic Tiramisu">
+                                <span class="veg-icon"><i class="fas fa-leaf"></i></span>
+                            </div>
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <h4>Classic Tiramisu</h4>
+                                    <span class="price">$9.99</span>
+                                </div>
+                                <p class="item-description">Layers of coffee-soaked ladyfingers and mascarpone cream, dusted with cocoa powder.</p>
+                                <div class="item-footer">
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- More dessert items would follow the same pattern -->
+                    </div>
+                </section>
+                
+                <!-- Drinks Section -->
+                <section class="menu-section" id="drinks">
+                    <h3 class="section-subtitle"><i class="fas fa-glass-martini-alt"></i> Drinks</h3>
+                    <div class="menu-items">
+                        <!-- Item 1 -->
+                        <div class="menu-item" data-category="drinks">
+                            <div class="item-image">
+                                <img src="images/menu/signature-cocktail.jpg" alt="Savory Signature">
+                            </div>
+                            <div class="item-details">
+                                <div class="item-header">
+                                    <h4>Savory Signature</h4>
+                                    <span class="price">$12.00</span>
+                                </div>
+                                <p class="item-description">Our signature cocktail with gin, elderflower liqueur, fresh citrus, and mint.</p>
+                                <div class="item-footer">
+                                    <div class="item-tags">
+                                        <span class="tag alcoholic">Contains Alcohol</span>
+                                    </div>
+                                    <button class="add-to-cart">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- More drink items would follow the same pattern -->
+                    </div>
+                </section>
+            </div>
+            
+            <div class="dietary-info">
+                <h4>Dietary Information</h4>
+                <div class="dietary-tags">
+                    <span class="dietary-tag vegetarian"><i class="fas fa-leaf"></i> Vegetarian</span>
+                    <span class="dietary-tag vegan"><i class="fas fa-seedling"></i> Vegan</span>
+                    <span class="dietary-tag gluten-free"><i class="fas fa-bread-slice"></i> Gluten-Free</span>
+                    <span class="dietary-tag spicy"><i class="fas fa-pepper-hot"></i> Spicy</span>
+                    <span class="dietary-tag healthy"><i class="fas fa-heart"></i> Healthy Choice</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Savory Bites</h4>
+                <p>Fine dining experience with locally sourced ingredients and global flavors.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="indexz.html">Home</a></li>
+                    <li><a href="aboutx.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Culinary Street, Foodville</li>
+                    <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                    <li><i class="fas fa-envelope"></i> info@savorybites.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Opening Hours</h4>
+                <ul>
+                    <li>Monday - Friday: 11am - 10pm</li>
+                    <li>Saturday: 10am - 11pm</li>
+                    <li>Sunday: 10am - 9pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 SAVORY BITES. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
